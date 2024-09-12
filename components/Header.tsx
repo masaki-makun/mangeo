@@ -80,22 +80,22 @@ export default function Header() {
                     <ul className="flex flex-col gap-8">
                       <li className="px-4 py-2 transition-opacity hover:opacity-80">
                         <Link
-                          href="/products"
-                          className="px-4 py-2 transition-opacity hover:opacity-80"
-                          scroll={false}
-                          onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        >
-                          製品
-                        </Link>
-                      </li>
-                      <li className="px-4 py-2 transition-opacity hover:opacity-80">
-                        <Link
                           href="/about"
                           className="px-4 py-2 transition-opacity hover:opacity-80"
                           scroll={false}
                           onClick={() => setIsMenuOpen(!isMenuOpen)}
                         >
                           会社概要
+                        </Link>
+                      </li>
+                      <li className="px-4 py-2 transition-opacity hover:opacity-80">
+                        <Link
+                          href="/products"
+                          className="px-4 py-2 transition-opacity hover:opacity-80"
+                          scroll={false}
+                          onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        >
+                          製品
                         </Link>
                       </li>
                       <li className="px-4 py-2 transition-opacity hover:opacity-80">
@@ -138,11 +138,11 @@ export default function Header() {
               mangeo
             </Link>
             <div className="space-x-4 text-on-color-light dark:text-on-color-dark">
-              <Link href="/products" className="transition-opacity hover:opacity-80" scroll={false}>
-                製品
-              </Link>
               <Link href="/about" className="transition-opacity hover:opacity-80" scroll={false}>
                 会社概要
+                </Link>
+                <Link href="/products" className="transition-opacity hover:opacity-80" scroll={false}>
+                製品
               </Link>
               <Link href="/pricing" className="transition-opacity hover:opacity-80" scroll={false}>
                 料金
